@@ -1,0 +1,13 @@
+<div class="footer">
+    <div class="footer__separator"></div>
+    <div class="footer__content">
+        <ul class="footer__list">
+            <li *ngFor="let item of links">
+                <a [href]="item.url" target="_blank" class="footer__item">
+                    <img [src]="item.icon" class="footer__icon" />                                      
+                    <p>{{item.name}}</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
