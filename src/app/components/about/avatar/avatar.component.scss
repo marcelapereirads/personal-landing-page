@@ -1,0 +1,24 @@
+@import "/src/assets/variables";
+
+.avatar {
+    &__frame {
+        width: 15rem;
+        height: 15rem;
+        border: solid 0.8rem;
+        position: absolute;
+
+        &--top {
+            transform: translate(-1.2rem, -1.2rem);
+            border-color: $tertiary-color;
+        }
+
+        &--bottom {
+            transform: translate(0.5rem, 0.5rem);
+            border-color: $secondary-color;
+        }
+    }
+
+    &__picture {
+        width: 16rem;
+    }
+}
