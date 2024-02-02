@@ -1,24 +1,19 @@
 @import "/src/assets/variables";
 
 .avatar {
+
     &__frame {
-        width: 15rem;
-        height: 15rem;
-        border: solid 0.8rem;
+        width: 16rem;
+        height: 16rem;
+        border: solid 1rem $secondary-color;
         position: absolute;
-
-        &--top {
-            transform: translate(-1.2rem, -1.2rem);
-            border-color: $tertiary-color;
-        }
-
-        &--bottom {
-            transform: translate(0.5rem, 0.5rem);
-            border-color: $secondary-color;
-        }
+        transform: translate(1.8rem, 1.8rem);
     }
 
     &__picture {
+        border: solid 1rem $primary-color;
         width: 16rem;
+        height: 16rem;
+        object-fit: fill;
     }
 }
