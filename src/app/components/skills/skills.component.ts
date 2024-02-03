@@ -1,4 +1,6 @@
 import {Component} from '@angular/core';
+import { NgFor } from '@angular/common';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 export interface Tile {
   color: string;
@@ -9,9 +11,11 @@ export interface Tile {
 }
 
 @Component({
-  selector: 'app-skills',
-  templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.scss']
+    selector: 'app-skills',
+    templateUrl: './skills.component.html',
+    styleUrls: ['./skills.component.scss'],
+    standalone: true,
+    imports: [MatGridListModule, NgFor]
 })
 export class SkillsComponent {
   
