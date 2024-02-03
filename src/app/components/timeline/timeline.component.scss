@@ -1,0 +1,32 @@
+@import "/src/assets/variables";
+
+$numberOfExperiences: 7;
+
+.timeline {
+    position: relative;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+
+    &__bar {
+        background-color: $secondary-color;
+        width: 8px;
+        height: 1000px;
+        border-radius: 4rem;
+    }
+
+    &__indicator {
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+    }
+
+
+    @for $i from 1 through $numberOfExperiences {
+        &__indicator:nth-child(#{$i}) {
+            background-color: $secondary-color;
+            top: calc(60px * $i);
+        }
+    }
+}
