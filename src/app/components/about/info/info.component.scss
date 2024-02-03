@@ -1,17 +1,27 @@
 @import "/src/assets/variables";
 
-h1 {
-    font-weight: bolder;
-    font-size: 2rem;
-}
+.info {
+    margin-top: 2.5rem;
 
-h2 {
-    font-weight: bolder;
-    font-size: 1.3rem;
+    &__title {
+        margin: 0 0 0.5rem;
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+
+    &__sub-title {
+        margin: 0;
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+
+    &__description {
+        margin-top: 16px;
+    }
 }
 
 @media (min-width: $mobile-width) {
     .info {
-        margin-left: 3rem;
+        margin-left: 4rem;
     }
 }
