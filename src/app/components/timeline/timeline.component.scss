@@ -1,32 +1,16 @@
 @import "/src/assets/variables";
 
-$numberOfExperiences: 7;
+.main-container .event-wrapper-container>.event>.event-container>.event-date-container,
+.main-container .event-wrapper-container>.event>.event-container>.event-divider-container,
+.main-container .hour.right {
+    display: none;
+    background-color: red;
+}
 
-.timeline {
-    position: relative;
-    padding: 4rem;
-    display: flex;
-    justify-content: center;
+.main-container .center-inner.no-period-key>.center-icon-container>.icon {
+    background-color: $primary-color;
+}
 
-    &__bar {
-        background-color: $secondary-color;
-        width: 8px;
-        height: 1000px;
-        border-radius: 4rem;
-    }
-
-    &__indicator {
-        position: absolute;
-        width: 2rem;
-        height: 2rem;
-        border-radius: 50%;
-    }
-
-
-    @for $i from 1 through $numberOfExperiences {
-        &__indicator:nth-child(#{$i}) {
-            background-color: $secondary-color;
-            top: calc(60px * $i);
-        }
-    }
+.main-container .center-inner>.period-container {
+    background-color: $secondary-color;
 }

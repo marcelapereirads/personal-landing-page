@@ -1,4 +1,2 @@
-<div class="timeline">
-  <div class="timeline__indicator" *ngFor="let exp of experiences"></div>
-  <div class="timeline__bar"></div>
-</div>
+<ngx-timeline [events]="events" [enableAnimation]="false" [reverseOrder]="true">
+</ngx-timeline>
